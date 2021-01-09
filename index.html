@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link href="style/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<div class="directions">
+		<div class="title">
+			<h1>Наши направления</h1>
+		</div>
+
+		<div class="mobil">
+			<h3 class="direction direction_paragraph">Все направления</h3>
+			<input src="javascript:void(0);" class="icon" type="checkbox" id="string" onclick="myFunction()"><label
+				for="string"><img src="img/next.png" class="icon"></label>
+		</div>
+		<div class="navbar" id="myNavbar">
+			<div class="countries"><a href="#v" class="active ">Все страны</a></div>
+			<a href="#v" class="countries_direction">Все направления</a>
+			<a href="#v">Италия</a>
+			<a href="#v">Германия</a>
+			<a href="#v">Греция</a>
+			<a href="#v">Турция</a>
+			<a href="#v">Испания</a>
+			<a href="#v">Португалия</a>
+		</div>
+	</div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img class="img" src="img/img1.png" srcset="img/img1x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Милан</h4>
+					<p class="img_paragraph">Италия</p>
+				</div>
+            </div>
+            <div class="swiper-slide">
+				<img class="img" src="img/img2.png" srcset="img/img2x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Афины</h4>
+					<p class="img_paragraph">Греция</p>
+				</div>
+			</div>
+
+			<div class="swiper-slide " onclick="show()" value="show">
+				<div><img class="img" src="img/img3.png" srcset="img/img3x2.png" /></div>
+
+				<div class="img_text img_text_medium">
+					<h4 class="img_paragraph">Фрайбург</h4>
+					<p class="img_paragraph">Германия</p>
+				</div>
+			</div>
+			<div class="window border_right border_bottom" id="window1" onclick="hide()">
+				<button class="close"> <img alt="" src="img/close.png"></button>
+				<p class="window_paragraph">Фрайбург-им-Брайсгау – оживленный университетский город в горах Шварцвальд
+					на юго-западе Германии,
+					известный своим умеренным климатом
+					и восстановленным после войны средневековым Старым городом.</p>
+
+				<button class="window_button">Подробнее</button>
+			</div>
+
+			<div class="swiper-slide"><img class="img" src="img/img4.png" srcset="img/img4x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Каш</h4>
+					<p class="img_paragraph">Турция</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img" src="img/img5.png" srcset="img/img5x2.png" />
+				<div class="img_text img_text_strong">
+					<h4 class="img_paragraph">Лиссабон</h4>
+					<p class="img_paragraph">Португалия</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img" src="img/img6.png" srcset="img/img6x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Мадрид</h4>
+					<p class="img_paragraph">Испания</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img" src="img/img7.png" srcset="img/img7x2.png" />
+				<div class="img_text img_text_medium">
+					<h4 class="img_paragraph">Виченца</h4>
+					<p class="img_paragraph">Италия</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img" src="img/img8.png" srcset="img/img8x2.png" />
+				<div class="img_text img_text_medium">
+					<h4 class="img_paragraph">Берлин</h4>
+					<p class="img_paragraph">Германия</p>
+				</div>
+			</div>
+			<div class="swiper-slide"><img class="img" src="img/img9.png" srcset="img/img9x2.png" />
+				<div class="img_text img_text_strong">
+					<h4 class="img_paragraph">Барселона</h4>
+					<p class="img_paragraph">Испания</p>
+				</div>
+			</div>
+
+			<div class="swiper-slide" onclick="show2()" value="show">
+				<img class="img" src="img/img10.png" srcset="img/img10x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Анталия</h4>
+					<p class="img_paragraph">Турция</p>
+				</div>
+			</div>
+			<div class="window border_left" id="window2" onclick="hide2()">
+				<p class="window_paragraph">Фрайбург-им-Брайсгау – оживленный университетский город в горах Шварцвальд
+					на юго-западе Германии,
+					известный своим умеренным климатом
+					и восстановленным после войны средневековым Старым городом.</p>
+				<button class="window_button">Подробнее</button>
+			</div>
+			<div class="swiper-slide">
+				<img class="img" src="img/img11.png" srcset="img/img11x2.png" />
+				<div class="img_text img_text_strong">
+					<h4 class="img_paragraph">Порту</h4>
+					<p class="img_paragraph">Португалия</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img img12" src="img/img12.png" srcset="img/img12x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Венеция</h4>
+					<p class="img_paragraph">Италия</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img " src="img/img13.png" srcset="img/img13x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Генуя</h4>
+					<p class="img_paragraph">Италия</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img " src="img/img14.png" srcset="img/img14x2.png" />
+				<div class="img_text img_text_strong">
+					<h4 class="img_paragraph">Гуарда</h4>
+					<p class="img_paragraph">Португалия</p>
+				</div>
+			</div>
+			<div class="swiper-slide"><img class="img " src="img/img15.png" srcset="img/img15x2.png" />
+				<div class="img_text img_text_small">
+					<h4 class="img_paragraph">Валенсия</h4>
+					<p class="img_paragraph">Испания</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img " src="img/img16.png" srcset="img/img16x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Падуя</h4>
+					<p class="img_paragraph">Италия</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img " src="img/img17.png" srcset="img/img17x2.png" />
+				<div class="img_text img_text_small">
+					<h4 class="img_paragraph">Салоники</h4>
+					<p class="img_paragraph">Греция</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<img class="img " src="img/img18.png" srcset="img/img18x2.png" />
+				<div class="img_text img_text_litle">
+					<h4 class="img_paragraph">Стамбул</h4>
+					<p class="img_paragraph">Турция</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="swiper-pagination"></div>
+
+	<div class="next btn-swiper"><img class="img_next" src="img/next.png"></div>
+	<div class="prev btn-swiper"><img class="img_prev" src="img/prev.png"></div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 6,
+			slidesPerColumn: 2,
+			spaceBetween: 30,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.next',
+				prevEl: '.prev',
+			},
+		});
+	</script>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myNavbar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	</script>
+
+	<script>
+		document.querySelector('.active').focus()
+	</script>
+
+	<script>
+		function show() {
+			document.getElementById("window1").style.display = "block"
+		}
+
+		function hide() {
+			document.getElementById("window1").style.display = "none"
+		}
+
+		function show2() {
+			document.getElementById("window2").style.display = "block"
+		}
+
+		function hide2() {
+			document.getElementById("window2").style.display = "none"
+		}
+	</script>
+
+</body>
+
+</html>
